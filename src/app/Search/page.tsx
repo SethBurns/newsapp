@@ -4,6 +4,7 @@ import { searchNews } from '../apiCalls/apiCalls';
 import { Article } from '../apiCalls/apiCalls';
 import Link from 'next/link';
 import { ArticlesContext } from '../hooks/useArticles';
+import { Nav } from '../Nav/page';
 
 export default function Search() {
   const setSearchedArticles = useContext(ArticlesContext)?.setSearchedArticles;
@@ -21,6 +22,7 @@ export default function Search() {
 
   return (
     <section className="text-center">
+      <Nav />
       <form className="flex flex-col justify-center items-center">
         <input
           className="border border-white text-black rounded-md p-2 m-2 h-full hover:border-gray-800 transition ease-in-out duration-500"
@@ -29,7 +31,7 @@ export default function Search() {
           onChange={(e) => setInput(e.target.value)}
         />
         <button
-          className="border border-white rounded-md p-2 m-2 h-full hover:border-gray-800 transition ease-in-out duration-500"
+          className="border border-white rounded-md p-2 m-2 h-full hover:invert hover:bg-black transition ease-in-out duration-500"
           type="submit"
           onClick={(e) => {
             e.preventDefault();
@@ -56,7 +58,7 @@ export default function Search() {
                   <img src={article.urlToImage} alt={article.title} />
                 )}
                 <p className="line-clamp-4">{article.description}</p>
-                <p>{article.publishedAt}</p>
+                <p>{(article.publishedAt).split('T')[0]}</p>
               </article>
             </Link>
           ))}
