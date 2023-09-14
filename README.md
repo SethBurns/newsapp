@@ -1,3 +1,4 @@
+# NewsApp TakeHome Challenge
 This web-app is a simple News site where users will be shown today's top stories on the homepage. Users can get more details about any article by clicking on them. A link to the source of each article is available and the search page allows the user to look for the most relevant articles for their input.
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
