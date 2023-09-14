@@ -10,7 +10,7 @@ export function SingleArticle({ source, article }: { article: Article, source: s
         <img className='w-1/2 m-4' src={article.urlToImage} alt={article.title} />
       )}
       <p className='w-2/3 m-2'> {article.content?.replaceAll(/(<([^>]+)>)/gi, "")}</p>
-      <p className="m-2">Author: {article.author}</p>
+      {article.author && <p className="m-2">Author: {article.author}</p>}
       <p className="m-2">Date Published: {(article.publishedAt).split('T')[0]}</p>
       <a className="m-2 border border-white p-2 rounded hover:invert hover:bg-black transition ease-in-out duration-500" href={`${article.url}`}>
         Read {article.source.name}
