@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First, run the development server by opening the projects root directory and using:
 
 ```bash
 npm run dev
@@ -19,12 +19,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Creator: Seth Burns - [GitHub Page](https://github.com/SethBurns)
 
+![Screen_Recording_2023-09-14_at_11 00 57_AM_V3](https://github.com/SethBurns/newsapp/assets/123792434/2ad218b3-5f91-45d1-a75e-c1787f21107b)
+
 Built With:
 * ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 * [![Tailwind][Tailwind]][Tailwind-url]
 * [![ReactJs][ReactJs]][ReactJs-url]
 * [![TS][TS]][TS-url]
 * ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+
+
 
 
 
